@@ -1,0 +1,71 @@
+<!-- Create an HTML form for a survey to collect information about the favourite food of people.
+
+The survey should include the following fields:
+Name (text input)
+Age (number input)
+Gender (radio buttons with Male and Female options)
+Favorite Food (drop-down list with options like Pizza, Chinese food, Indian food, etc.)
+Do you like to cook? (checkbox with Yes/No options)
+Additional comments (textarea input)
+Submit button
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+
+Below is the basic structure of the expected output:
+hint-image
+
+
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="/submit-survey" method="post">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+    
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+    
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+    
+        <!-- Favorite Food -->
+        <label for="food">Favorite Food:</label>
+        <select id="food" name="food">
+            <option value="Pizza" selected>Pizza</option>
+            <option value="Chinese">Chinese food</option>
+            <option value="Indian">Indian food</option>
+        </select>
+        <br><br>
+    
+        <!-- Do you like to cook? -->
+        <label for="cook">Do you like to cook?</label>
+        <input type="checkbox" id="cook" name="cook" value="Yes">
+        <label for="cook">Yes</label>
+        <br><br>
+    
+        <!-- Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+        <br><br>
+    
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
