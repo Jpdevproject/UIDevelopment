@@ -1,0 +1,12 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    color: #5DA9E9;
+}
+p#special {
+    font-size: 20px;
+}
+header img {
+    width: 400px;
+}
